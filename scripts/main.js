@@ -71,4 +71,14 @@ const departments = {
     }
 }
 
+// Opdracht 1
 console.log(departments);
+console.log(departments.sales.numberOfEmployees);
+console.log(`Marketing is een leuke afdeling om te werken. ${departments.marketing.description}`);
+console.log(`De afdeling Customer Service heeft ${departments.marketing.numberOfEmployees} medewerkers`)
+console.log(`Sales is een uitdagende afdeling om te werken als Verkoopmanager. ${departments["customer-service"].jobs[1].description}`)
+
+
+
+
+
