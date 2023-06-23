@@ -78,6 +78,18 @@ console.log(`Marketing is een leuke afdeling om te werken. ${departments.marketi
 console.log(`De afdeling Customer Service heeft ${departments.marketing.numberOfEmployees} medewerkers`)
 console.log(`Sales is een uitdagende afdeling om te werken als Verkoopmanager. ${departments["customer-service"].jobs[1].description}`)
 
+// Opdracht 2
+const userInput = prompt('Over welke afdeling wil je meer informatie? Kies uit: [marketing / sales / customer-service]')
+
+if (userInput == 'marketing') {
+    console.log(departments.marketing.description)
+} else if (userInput == 'sales') {
+    console.log(departments.sales.description)
+} else if (userInput == 'customer-service') {
+    console.log(departments["customer-service"].description)
+} else {
+    console.error('Verkeerde input, probeer opnieuw!')
+}
 
 
 
