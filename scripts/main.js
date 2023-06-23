@@ -91,6 +91,33 @@ if (userInput == 'marketing') {
     console.error('Verkeerde input, probeer opnieuw!')
 }
 
+// Opdracht 3
+
+const userInputMarketing = prompt(`Je koos marketing. Over welke functie wil je meer weten? Voer een getal tussen 0 en 3 in.
+0: ${departments.marketing.jobs[0].title}
+1: ${departments.marketing.jobs[1].title}
+2: ${departments.marketing.jobs[2].title}
+3: ${departments.marketing.jobs[3].title}`)
+
+const userInputNumber = parseInt(userInputMarketing);
+
+switch (userInputNumber) {
+    case 0:
+        console.log(`Je koos ${departments.marketing.jobs[0].title}. Een uitdagende rol! ${departments.marketing.jobs[0].description}`);
+        break;
+    case 1:
+        console.log(`Je koos ${departments.marketing.jobs[1].title}. Een uitdagende rol! ${departments.marketing.jobs[1].description}`);
+        break;
+    case 2:
+        console.log(`Je koos ${departments.marketing.jobs[2].title}. Een uitdagende rol! ${departments.marketing.jobs[2].description}`);
+        break;
+    case 3:
+        console.log(`Je koos ${departments.marketing.jobs[3].title}. Een uitdagende rol! ${departments.marketing.jobs[3].description}`);
+        break;
+    default:
+        console.log('Ongeldige keuze. Probeer het opnieuw door de pagina te verversen.');
+        break;
+}
 
 
 
